@@ -4,16 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jogo eletrônico</title>
+    <title>Jogo da velha</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Jogo eletrônico</h1>
-    <table>
-        <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-        </tr>
-    </table>
+    <section>
+        <h1>JOGO DA VELHA </h1>
+        <table id="tabela">
+            <tr>
+                <td id="celula11" class="caseGame" onclick="joga(this.id)"></td>
+                <td id="celula12" class="caseGame" onclick="joga(this.id)"></td>
+                <td id="celula13" class="caseGame" onclick="joga(this.id)"></td>
+                <div id="lineH1"></div>
+                <div id="linev1"></div>
+                <div id="lineD1"></div>
+            </tr>
+            <tr>
+                <td id="celula21" class="caseGame" onclick="joga(this.id)"></td>
+                <td id="celula22" class="caseGame" onclick="joga(this.id)"></td>
+                <td id="celula23" class="caseGame" onclick="joga(this.id)"></td>
+                <div id="lineH2"></div>
+                <div id="linev2"></div>
+            </tr>
+            <tr>
+                <td id="celula31" class="caseGame" onclick="joga(this.id)"></td>
+                <td id="celula32" class="caseGame" onclick="joga(this.id)"></td>
+                <td id="celula33" class="caseGame" onclick="joga(this.id)"></td>
+                <div id="lineH3"></div>
+                <div id="linev3"></div>
+                <div id="lineD2"></div>
+            </tr>
+        </table>
+        <br>
+        <div id="container-btn">
+            <input type="button" id="novoJogo" value="Novo jogo" onclick="novoJogo()">
+        </div>
+    </section>
+    <script src="js/script.js"></script>
 </body>
 </html>
