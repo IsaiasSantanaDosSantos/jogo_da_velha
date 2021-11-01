@@ -54,13 +54,39 @@ function ver() {
             linhaDaVitoriaLineH2()
         } if (hx3) {
             linhaDaVitoriaLineH3()
-        }
+        } if (vx1) {
+            linhaDaVitoriaLineV1()
+        } if (vx2) {
+            linhaDaVitoriaLineV2()
+        } if (vx3) {
+            linhaDaVitoriaLineV3()
+        } if (dx1) {
+            linhaDaVitoriaLineD1()
+        } if (dx2) {
+            linhaDaVitoriaLineD2()
+        } 
         
    } else if (h01 || h02 || h03 || v01 || v02 || v03 || d01 || d02) {
        alert('O "O" ganhou. Parabéns!!')
-}
-    
-}
+        } if (h01) {
+            linhaDaVitoriaLineH1()
+        } if (h02) {
+            linhaDaVitoriaLineH2()
+        } if (h03) {
+            linhaDaVitoriaLineH3()
+        } if (v01) {
+            linhaDaVitoriaLineV1()
+        } if (v02) {
+            linhaDaVitoriaLineV2()
+        } if (v03) {
+            linhaDaVitoriaLineV3()
+        } if (d01) {
+            linhaDaVitoriaLineD1()
+        } if (d02) {
+            linhaDaVitoriaLineD2()
+        } 
+            
+        }
 
 /* Cor das fontes */
 
@@ -110,6 +136,36 @@ function linhaDaVitoriaLineH3() {
     horizontalThree.style.display = 'block'
 }
 
+//Função mostrar 1º linha vertical do ganhador
+function linhaDaVitoriaLineV1() {
+    var verticalOne = document.getElementById('linev1')
+    verticalOne.style.display = 'block' 
+}
+
+//Função mostrar 2º linha vertical do ganhador
+function linhaDaVitoriaLineV2() {
+    var verticalTwo = document.getElementById('linev2')
+    verticalTwo.style.display = 'block' 
+}
+
+//Função mostrar 3º linha vertical do ganhador
+function linhaDaVitoriaLineV3() {
+    var verticalThree = document.getElementById('linev3')
+    verticalThree.style.display = 'block' 
+}
+
+//Função mostrar 1º linha diagonal do ganhador
+function linhaDaVitoriaLineD1() {
+    var diagonalOne = document.getElementById('lineD1')
+    diagonalOne.style.display = 'block' 
+}
+
+//Função mostrar 2º linha diagonal do ganhador
+function linhaDaVitoriaLineD2() {
+    var diagonalTwo = document.getElementById('lineD2')
+    diagonalTwo.style.display = 'block' 
+}
+
 
 
 
@@ -117,6 +173,42 @@ function linhaDaVitoriaLineH3() {
 
 //Tirar linha do ganhador
 function limparLinha() {
+    //1º linha horizontal
     var horizontalOne = document.getElementById('lineH1')
     horizontalOne.style.display = 'none'
+    //2º linha horizontal
+    var horizontalTwo = document.getElementById('lineH2')
+    horizontalTwo.style.display = 'none'
+    //3º linha horizontal
+    var horizontalThree = document.getElementById('lineH3')
+    horizontalThree.style.display = 'none'
+    //1º linha vertical
+    var verticalOne = document.getElementById('linev1')
+    verticalOne.style.display = 'none'
+    //2º linha vertical 
+    var verticalTwo = document.getElementById('linev2')
+    verticalTwo.style.display = 'none'
+    //3º linha vertical
+    var verticalThree = document.getElementById('linev3')
+    verticalThree.style.display = 'none'
+    //1º linha diagonal
+    var diagonalOne = document.getElementById('lineD1')
+    diagonalOne.style.display = 'none'
+    //2º linha diagonal
+    var diagonalTwo = document.getElementById('lineD2')
+    diagonalTwo.style.display = 'none' 
 }
+ //Pontuação jogador
+ //Jogador X
+var playerOneX = document.getElementById("playerOne").innerHTML="Jogador<br>X<br><br>Pontos:<br>"
+
+//Jogador O
+var playerTwoO = document.getElementById("playerTwo").innerHTML="Jogador<br>O<br><br>Pontos:<br>"
+
+/*
+function pontosX() {
+    if(hx1 || hx2 || hx3 || vx1 || vx2 || vx3 || dx1 || dx2) {
+        playerOneX.innerHTML+= "1"
+    }
+}
+*/
